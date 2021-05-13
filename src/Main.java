@@ -8,8 +8,8 @@ public class Main {
         cir.dienTichCricle();
 
         Month thang = new Month();
-        thang.thang(10);
-        thang.thang1(2);
+        thang.thang(100);
+        thang.thang1(0);
 
         Quadratic qua = new Quadratic();
         qua.resolve(1,-8,16);

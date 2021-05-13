@@ -8,6 +8,9 @@ public class Month {
         } else if (month == 4 || month == 6 || month == 9 || month == 11) {
             System.out.println("Tháng " + month + " có 30 ngày");
         }
+        else{
+            System.out.println("Tháng "+month+" không tồn tại");
+        }
     }
 
     void thang1(int month1) {
@@ -30,6 +33,8 @@ public class Month {
             case 11:
                 System.out.println("Tháng " + month1 + " có 30 ngày");
                 break;
+            default:
+                System.out.println("Tháng " + month1+" không tồn tại");
 
         }
     }
