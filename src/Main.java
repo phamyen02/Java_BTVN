@@ -36,7 +36,7 @@ public class Main {
         }
         int b =10;
         int countPrime = 0;
-        int i = 0;
+        int i = 2;
         System.out.println("\n10 số nguyên tố đầu tiên là: ");
         while (countPrime < b) {
             if (prime.isPrime(i)) {
