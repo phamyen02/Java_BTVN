@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Java_BT_lession4 les = new Java_BT_lession4();
+        ArrayString ar = new ArrayString();
         PrimeNumber prime = new PrimeNumber();
         while (true) {
             menu();
@@ -103,6 +104,19 @@ public class Main {
                 case 11:
                     les.countWord("What  is your name");
                     break;
+                case 12:
+                    System.out.println("Nhập số phần tử trong mảng: ");
+                    n = scanner.nextInt();
+                    int[] array = new int[n];
+                    System.out.println("Nhập các phần tử của mảng: ");
+                    for (int i = 0; i < n; i++) {
+                        System.out.printf("a[%d] =", i);
+                        array[i] = scanner.nextInt();
+                    }
+                    ar.printMaxMin(array);
+                    ar.printSecond(array);
+
+
             }
 
         }
@@ -123,6 +137,7 @@ public class Main {
         System.out.println("9 - Bài tập lấy index của chữ cái trong chuỗi");
         System.out.println("10 - Bài tập in ra bảng cửu chương");
         System.out.println("11 - Bài tập đếm số từ");
+        System.out.println("12 - Bài tập tạo mảng số nguyên");
         System.out.println("0 - Thoát chương trình");
         System.out.print("Lựa chọn của bạn là: ");
     }

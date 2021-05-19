@@ -1,4 +1,5 @@
 import java.sql.SQLOutput;
+//https://github.com/TechMaster/JavaCore/tree/main/09Exercises
 
 public class Java_BT_lession4 {
     void factorial(int f) {
@@ -33,6 +34,9 @@ public class Java_BT_lession4 {
     }
 
     void countWord(String input) {
+        if(input == null){
+            return ;
+        }
         int count = 1;
         System.out.println(input);
         for (int i = 0; i < input.length(); i++) {
