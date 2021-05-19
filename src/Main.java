@@ -115,7 +115,7 @@ public class Main {
                     }
                     ar.printMaxMin(array);
                     ar.printSecond(array);
-
+                    break;
 
             }
 
