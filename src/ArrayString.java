@@ -27,7 +27,6 @@ public class ArrayString {
         int max1 = Integer.MIN_VALUE;
         int max1Idx=0;
         for (int i = 0; i < array.length; i++) {
-
             if (array[i] > max) {
                 max1 = max;
                 max = array[i];
@@ -35,7 +34,7 @@ public class ArrayString {
                 max1 = array[i];
             max1Idx = i;
         }
-        System.out.println("maxx1: " + max1);
+        System.out.println("Phần tử lớn thứ 2 trong mảng: " + max1);
         System.out.println("indexSecond: "+ max1Idx);
     }
 }
