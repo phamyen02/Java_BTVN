@@ -9,7 +9,6 @@ public class Java_BT_lession4 {
         }
         System.out.println("Giai thừa là: " + fact);
     }
-
     void printString() {
         String quota = "You only live once, but if you do it right, once is enough";
         int count = 0;

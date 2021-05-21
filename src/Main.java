@@ -118,6 +118,7 @@ public class Main {
                     break;
                 case 13:
                     ar.multiArray();
+                    break;
 
             }
 
