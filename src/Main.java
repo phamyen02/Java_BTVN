@@ -116,6 +116,8 @@ public class Main {
                     ar.printMaxMin(array);
                     ar.printSecond(array);
                     break;
+                case 13:
+                    ar.multiArray();
 
             }
 
@@ -138,6 +140,7 @@ public class Main {
         System.out.println("10 - Bài tập in ra bảng cửu chương");
         System.out.println("11 - Bài tập đếm số từ");
         System.out.println("12 - Bài tập tạo mảng số nguyên");
+        System.out.println("13 - Bài tập mảng đa chiều");
         System.out.println("0 - Thoát chương trình");
         System.out.print("Lựa chọn của bạn là: ");
     }
