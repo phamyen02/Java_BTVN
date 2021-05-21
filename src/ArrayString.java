@@ -84,20 +84,46 @@ public class ArrayString {
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < column; j++) {
                 for (k = j + 1; k < column; k++) {
-                        if (arr[1][j] > arr[1][k]) {
-                            m = arr[1][k];
-                            arr[1][k] = arr[1][j];
-                            arr[1][j] =m;
+                    if (arr[1][j] > arr[1][k]) {
+                        m = arr[1][k];
+                        arr[1][k] = arr[1][j];
+                        arr[1][j] = m;
                     }
                 }
-            }
-        }
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < column; j++) {
                 System.out.print(arr[i][j] + " ");
             }
             System.out.println();
         }
+    }
+
+    void multiArray2() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Nhập số lượng phần tử của mảng: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Các phần tử của mảng là: ");
+        for (int i = 0; i < n; i++) {
+            System.out.printf("a[%d] = ", i);
+            arr[i] = sc.nextInt();
+        }
+        System.out.println("số nguyên tố là: "); //how to loại bỏ các phần tử trùng trog mảng???
+        for (int i = 0; i < n; i++) {
+            if (PrimeNumber.isPrime(arr[i])) {
+                System.out.print(arr[i] + "\t");
+            }
+        }
+        System.out.println("tổng các số nguyên tố là: ");
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            if (PrimeNumber.isPrime(arr[i])) {
+                sum = sum + arr[i];
+            }
+        }
+        System.out.println(sum);
+        System.out.println("Nhập vị trí phần tử muốn sửa: ");
+        int k = sc.nextInt();
+
+
     }
 }
 

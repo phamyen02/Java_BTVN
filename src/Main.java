@@ -85,7 +85,7 @@ public class Main {
                     Random rand = new Random();
                     int x = rand.nextInt(10) + 1; // nextInt random từ 1 -> 10, số k âm
                     System.out.println("Số random là: " + x);
-                    if (prime.isPrime(x)) {
+                    if (PrimeNumber.isPrime(x)) {
                         System.out.println(x + " là số nguyên tố");
                     } else {
                         System.out.println(x + " không phải số nguyên tố");
@@ -117,7 +117,8 @@ public class Main {
                     ar.printSecond(array);
                     break;
                 case 13:
-                    ar.multiArray();
+                    //ar.multiArray();
+                    ar.multiArray2();
                     break;
 
             }
@@ -141,7 +142,7 @@ public class Main {
         System.out.println("10 - Bài tập in ra bảng cửu chương");
         System.out.println("11 - Bài tập đếm số từ");
         System.out.println("12 - Bài tập tạo mảng số nguyên");
-        System.out.println("13 - Bài tập mảng đa chiều");
+        System.out.println("13 - Bài tập mảng đa chiều + 1 chiều");
         System.out.println("0 - Thoát chương trình");
         System.out.print("Lựa chọn của bạn là: ");
     }
