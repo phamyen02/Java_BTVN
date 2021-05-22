@@ -109,10 +109,10 @@ public class ArrayString {
         System.out.println("số nguyên tố là: "); //how to loại bỏ các phần tử trùng trog mảng???
         for (int i = 0; i < n; i++) {
             if (PrimeNumber.isPrime(arr[i])) {
-                System.out.print(arr[i] + "\t");
+                System.out.println(arr[i] + "\t");
             }
         }
-        System.out.println("tổng các số nguyên tố là: ");
+        System.out.print("tổng các số nguyên tố là: ");
         int sum = 0;
         for (int i = 0; i < n; i++) {
             if (PrimeNumber.isPrime(arr[i])) {
@@ -122,8 +122,17 @@ public class ArrayString {
         System.out.println(sum);
         System.out.println("Nhập vị trí phần tử muốn sửa: ");
         int k = sc.nextInt();
-
-
+        System.out.println("Nhap X:");
+        int x = sc.nextInt();
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == arr[k]){
+                arr[i]=x;
+            }
+        }
+        System.out.print("Dãy sau khi thay đổi: ");
+        for (int j : arr) {
+            System.out.print(j + "\t");
+        }
     }
 }
 

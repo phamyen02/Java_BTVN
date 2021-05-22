@@ -117,7 +117,7 @@ public class Main {
                     ar.printSecond(array);
                     break;
                 case 13:
-                    ar.multiArray();
+                //    ar.multiArray();
                     ar.multiArray2();
                     break;
 
