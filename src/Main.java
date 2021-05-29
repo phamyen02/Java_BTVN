@@ -117,9 +117,30 @@ public class Main {
                     ar.printSecond(array);
                     break;
                 case 13:
-                //    ar.multiArray();
+                    ar.multiArray();
                     ar.multiArray2();
                     break;
+                case 14:
+                    BtLonBuoi9 bt9 = new BtLonBuoi9();
+                    Scanner sc = new Scanner(System.in);
+                    System.out.print("Nhập số phần tử của mảng: ");
+                    int mm = sc.nextInt();
+                    System.out.println("Nhập giá trị của các phần tử: ");
+                    int[] arr = new int[mm];
+                    int i;
+                    for (i = 0; i < mm; i++) {
+                        System.out.printf("a[%d] =", i);
+                        arr[i] = sc.nextInt();
+                    }
+                    if (bt9.findEven(arr, mm) == -1) {
+                        System.out.println("Mảng không có số chẵn");
+                    } else {
+                        System.out.println("Số chẵn cuối cùng trong mảng: " + arr[i]);
+                    }
+                    break;
+                case 15:
+                    Buoi10Bai2 bt10 = new Buoi10Bai2();
+                    bt10.checkDuplicate();
 
             }
 
@@ -143,6 +164,8 @@ public class Main {
         System.out.println("11 - Bài tập đếm số từ");
         System.out.println("12 - Bài tập tạo mảng số nguyên");
         System.out.println("13 - Bài tập mảng đa chiều + 1 chiều");
+        System.out.println("14 - Bài tập buổi 2-bài 6");
+        System.out.println("15 - Bài tập xóa các ký tự trùng nhau trong chuỗi");
         System.out.println("0 - Thoát chương trình");
         System.out.print("Lựa chọn của bạn là: ");
     }
